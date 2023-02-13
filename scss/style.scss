@@ -1,0 +1,20 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/schedule';
+@import 'layout/church';
+@import 'layout/charity';
+@import 'layout/news';
+@import 'layout/map';
+@import 'layout/gallery';
+@import 'layout/footer';
+
+

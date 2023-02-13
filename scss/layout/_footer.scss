@@ -1,0 +1,134 @@
+.footer {
+    background-color: #000E2A;
+    color: var(--color-white);
+
+    &__inner {
+        padding: 50px 0;
+    }
+
+    &__wrapper-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper-top-title {
+        text-align: center;
+        font-size: 55px;
+        line-height: 1;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+
+    &__wrapper-top-rigth {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px 30px;
+    }
+
+    &__wrapper-top-text {
+        font-size: 21px;
+    }
+
+    &__svg {
+        width: 40px;
+        height: auto;
+    }
+
+    &__g {
+        fill: var(--color-white);
+    }
+    &__wrapper-top-logo {
+        width: 40px;
+    }
+
+    &__hr {
+        color: var(--color-white);
+        margin-bottom: 30px;
+    }
+
+    &__wrapper-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__wrapper-bottom-left {
+        flex-basis: 350px;
+    }
+
+    &__wrapper-text {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper-left-phone {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--color-white);
+    }
+
+    &__wrapper-bottom-center {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__wrapper-center-email {
+    }
+
+    &__center-span {
+        display: block;
+        font-size: 21px;
+        margin-bottom: 15px;
+        color: #4CA1DA;
+    }
+
+    &__wrapper-email {
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: 18px;
+    }
+
+    &__wrapper-center-links {
+    }
+
+    &__wrapper-list {
+    }
+
+    &__wrapper-item {
+        list-style: none;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper-link {
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: 18px;
+    }
+
+    &__wrapper-center-social {
+        flex: 0 0 165px;
+    }
+
+    &__wrapper-link-social {
+        display: inline-block;
+    }
+
+    &__wrapper-youtube {
+        width: 100px;
+    }
+
+    &__wrapper-bottom-rigth {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__wrapper-rigths {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,266 @@
+.schedule {
+    background-color: var(--bg-color);
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {
+        padding-bottom: 15px;
+    }
+
+    &__swiper {
+        text-align: left;
+        padding: 16px 10px;
+        margin-bottom: 40px;
+    }
+
+    &__slide {
+        background-color: var(--color-white);
+        padding: 10px 15px 20px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-box-shadow: 1px 6px 8px 2px rgba(132, 155, 172, 0.2);
+        -moz-box-shadow: 1px 6px 8px 2px rgba(132, 155, 172, 0.2);
+        box-shadow: 1px 6px 8px 2px rgba(132, 155, 172, 0.2);
+    }
+
+    &__card-top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__date {
+        padding: 10px;
+        font-size: 60px;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--accent-color);
+    }
+
+    &__month {
+        font-size: 25px;
+        color: #222222;
+    }
+
+    &__day {
+        font-size: 21px;
+    }
+
+    &__celebration {
+        font-size: 30px;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__item-time {
+        width: 40px;
+        text-align: end;
+        font-size: 20px;
+    }
+
+    &__item-description {
+        font-size: 20px;
+        width: auto;
+    }
+
+    &__pagination {
+        display: none;
+    }
+
+    &__link {
+        @extend %btn-blue;
+    }
+}
+
+// --------------------------- media -----------------------------//
+
+@media screen and (max-width: 900px) {
+    .schedule__swiper {}
+
+    .schedule__swiper-wrapper {}
+
+    .schedule__slide {
+
+    }
+
+    .schedule__card-top {
+
+    }
+
+    .schedule__date {
+
+    }
+
+    .schedule__month-day {
+
+    }
+
+    .schedule__month {
+
+    }
+
+    .schedule__day {
+
+    }
+
+    .schedule__card-bottom {
+
+    }
+
+    .schedule__celebration {
+
+    }
+
+    .schedule__list {
+
+    }
+
+    .schedule__list-item {
+
+    }
+
+    .schedule__item-time {
+
+    }
+
+    .schedule__item-description {
+
+    }
+
+    .schedule__link {
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .schedule__swiper {}
+
+    .schedule__swiper-wrapper {}
+
+    .schedule__slide {
+
+    }
+
+    .schedule__card-top {
+
+    }
+
+    .schedule__date {
+
+    }
+
+    .schedule__month-day {
+
+    }
+
+    .schedule__month {
+
+    }
+
+    .schedule__day {
+
+    }
+
+    .schedule__card-bottom {
+
+    }
+
+    .schedule__celebration {
+
+    }
+
+    .schedule__list {
+
+    }
+
+    .schedule__list-item {
+
+    }
+
+    .schedule__item-time {
+
+    }
+
+    .schedule__item-description {
+
+    }
+
+    .schedule__link {
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .schedule__swiper {
+        margin-bottom: 25px;
+    }
+
+    .schedule__swiper-wrapper {}
+
+    .schedule__slide {
+
+    }
+
+    .schedule__card-top {
+        margin-bottom: 0;
+    }
+
+    .schedule__date {
+        font-size: 55px;
+    }
+
+    .schedule__month-day {
+        font-size: 20px;
+    }
+
+    .schedule__month {
+        font-size: 20px;
+    }
+
+    .schedule__day {
+
+    }
+
+    .schedule__card-bottom {
+
+    }
+
+    .schedule__celebration {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .schedule__list {
+
+    }
+
+    .schedule__list-item {
+
+    }
+
+    .schedule__item-time {
+        font-size: 18px;
+    }
+
+    .schedule__item-description {
+        font-size: 18px;
+    }
+
+    .schedule__link {
+
+    }
+}

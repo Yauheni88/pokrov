@@ -1,0 +1,44 @@
+// ----------------------------- hamburger --------------------------------//
+
+.header {
+    &__hamburger {
+        display: none;
+        width: 40px;
+        cursor: pointer;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #000E2A;
+        }
+    
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            margin-left: auto;
+            background-color: #000E2A;
+        }
+    }
+    
+    &__hamburger-line {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #000E2A;
+        margin: 5px 0;
+    }
+}
+
+
+// ----------------------------- hamburger --------------------------------//
+
+
+@media screen and (max-width: 900px) {
+    .header__hamburger {
+        display: block;
+    }
+}

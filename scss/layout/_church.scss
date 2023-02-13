@@ -1,0 +1,128 @@
+.church {
+
+    &__inner {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    &__box {
+        & + .church__box {
+            padding-top: 50px;
+        }
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            height: 0.5px;
+            background-color: #000E2A;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 4%;
+        & + .church__wrapper {
+            margin-top: 40px;
+        }
+
+        
+    }
+
+    &__left {
+        flex: 0 0 36%;
+    }
+
+    &__figure-image {
+        max-width: 100%;
+    }
+
+    &__right {
+        flex: 0 0 60%;
+    }
+
+    &__right-subtitle {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__right-text {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    &__church-img {
+        max-width: 100%;
+        border-radius: var(--border-radius-images);
+    }
+
+    &__left2 {
+        flex: 0 0 60%;
+    }
+
+    &__right2 {
+        flex: 0 0 35%;
+    }
+
+    &__right-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__right-link {
+        @extend %btn-blue;
+    }
+
+    &__wrapper-calendar {
+        margin-bottom: 25px;
+    }
+
+    &__left-calendar {
+        flex: 0 0 25%;
+    }
+
+    &__right-calendar {
+        flex: 0 0 70%;
+    }
+
+    &__day-icon {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--border-radius-images);
+        }
+    }
+
+    &__calendar-description {
+        font-size: 20px;
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    }
+
+    &__sunday-left {
+        width: 46%;
+
+        img {
+            max-width: 100%;
+            border-radius: var(--border-radius-images);
+        }
+    }
+
+    &__sunday-right {
+        width: 50%;
+    }
+}
