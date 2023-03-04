@@ -1,5 +1,5 @@
 .header {
-    padding: 5px 0;
+    padding: 10px 0;
 
     &__navigation {
         display: flex;
@@ -80,7 +80,7 @@
         }
 
         .header__logo-link {
-            width: 210px;
+            width: 222px;
         }
 
         .header__svg {
@@ -89,7 +89,7 @@
         }
 
         .header__logo-title {
-            font-size: 18px;
+            font-size: 20px;
         }
 
     }

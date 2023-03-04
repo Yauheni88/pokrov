@@ -6,9 +6,7 @@
     }
 
     &__box {
-        & + .church__box {
-            padding-top: 50px;
-        }
+        padding-top: 50px;
         
         &::after {
             content: "";
@@ -24,14 +22,16 @@
         }
     }
 
+    &__box1 {
+        padding-top: 0;
+    }
+
     &__wrapper {
         display: flex;
         gap: 4%;
         & + .church__wrapper {
             margin-top: 40px;
         }
-
-        
     }
 
     &__left {
@@ -68,6 +68,10 @@
 
     &__right2 {
         flex: 0 0 35%;
+
+        .church__right-subtitle {
+            display: none;
+        }
     }
 
     &__right-title {
@@ -93,7 +97,7 @@
 
     &__day-icon {
         img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             display: block;
             border-radius: var(--border-radius-images);
@@ -117,6 +121,7 @@
         width: 46%;
 
         img {
+            display: block;
             max-width: 100%;
             border-radius: var(--border-radius-images);
         }
@@ -124,5 +129,78 @@
 
     &__sunday-right {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .church {
+    }
+    .section {
+    }
+    .container {
+    }
+    .church__inner {
+        max-width: 100%;
+    }
+    .church__title {
+    }
+    .title {
+    }
+    .church__box {
+       padding-top: 40px;
+
+        &::after {
+            margin-top: 40px;
+        }
+    }
+
+    .church__box1 {
+        padding-top: 0;
+    }
+
+    .church__wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .church__left {
+    }
+    .church__church-img {
+    }
+    .church__right {
+    }
+    .church__right-subtitle {
+        font-size: 24px;
+    }
+    .church__right-text {
+    }
+    .church__right-link {
+        margin-top: 10px;
+    }
+    .church__left2 {
+        order: 2;
+    }
+    .church__right-title {
+        font-size: 21px;
+    }
+    .church__right2 {
+        order: 1;
+    }
+    .church__sunday-left {
+        width: 100%;
+    }
+    .church__sunday-image1 {
+    }
+    .church__sunday-right {
+        width: 100%;
+    }
+    .church__wrapper-calendar {
+    }
+    .church__right-calendar {
+    }
+    .church__calendar-description {
+    }
+    .church__left-calendar {
+    }
+    .church__day-icon {
     }
 }
