@@ -12,8 +12,9 @@
             width: 100%;
             height: 4px;
             border-radius: 5px;
+            box-shadow: 4px 2px 6px rgba(3,2,43,0.50);
             // background-color: #252526;
-            background-color: #3865aa;
+            background-color: #fff;
         }
     
         &::after {
@@ -23,7 +24,8 @@
             height: 4px;
             border-radius: 5px;
             margin-left: auto;
-            background-color: #3865aa;
+            box-shadow: 4px 2px 6px rgba(3,2,43,0.50);
+            background-color: #fff;
         }
     }
     
@@ -32,7 +34,8 @@
         width: 100%;
         height: 4px;
         border-radius: 5px;
-        background-color: #3865aa;
+        box-shadow: 4px 2px 6px rgba(3,2,43,0.50);
+        background-color: #fff;
         margin: 5px 0;
     }
 }
