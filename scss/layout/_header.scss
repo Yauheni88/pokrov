@@ -10,7 +10,7 @@
 
     &__logo-link {
         display: flex;
-        width: 290px;
+        width: 339px;
         align-items: center;
         text-decoration: none;
     }
@@ -26,16 +26,16 @@
     }
 
     &__logo-img {
-        width: 40px;
+        width: 65px;
         height: auto;
         margin-right: 10px;
     }
 
     &__logo-title {
-        font-size: 25px;
+        font-size: 26px;
         line-height: 1.2;
         font-weight: 400;
-        color: #564f4f;
+        color: #252526;
     }
 
     &__menu {
@@ -44,6 +44,7 @@
 
         &-item {
             list-style: none;
+            height: 100%;
             & + .header__menu-item {
                 margin-left: 30px;
             }
@@ -53,7 +54,7 @@
             display: block;
             text-decoration: none;
             color: #564f4f;
-            font-size: 19px;
+            font-size: 23px;
             transition: color .5s;
 
             &:hover {
@@ -65,12 +66,21 @@
 
     // ---------------------------------- media ----------------------------------//
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 992px) {
         .header__menu {
             display: none;
         }
 
+
+
         
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        .header__logo-img {
+            width: 60px;
+        }
     }
 
     @media screen and (max-width: 576px) {
@@ -79,8 +89,12 @@
             gap: 10px;
         }
 
+        .header__logo-img {
+            width: 50px;
+        }
+
         .header__logo-link {
-            width: 222px;
+            width: 255px;
         }
 
         .header__svg {
