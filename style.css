@@ -100,7 +100,7 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: #252526;
+  background-color: #3865aa;
 }
 .header__hamburger::after {
   content: "";
@@ -109,14 +109,14 @@ body {
   height: 4px;
   border-radius: 5px;
   margin-left: auto;
-  background-color: #252526;
+  background-color: #3865aa;
 }
 .header__hamburger-line {
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: #252526;
+  background-color: #3865aa;
   margin: 5px 0;
 }
 
@@ -205,6 +205,12 @@ body {
   .header__logo-img {
     width: 50px;
   }
+  .header__svg {
+    width: 35px;
+  }
+  .header__svg path {
+    fill: #fff;
+  }
   .header__logo-link {
     width: 255px;
   }
@@ -263,7 +269,6 @@ body {
 }
 .hero__link:hover {
   background-color: var(--accent-color);
-  border: 1px solid #3865aa;
 }
 
 @media screen and (max-width: 768px) {
@@ -301,7 +306,6 @@ body {
   .hero__wrapper {
     max-width: 490px;
     margin-left: 0;
-    text-align: center;
   }
   .hero__title {
     font-size: 34px;
