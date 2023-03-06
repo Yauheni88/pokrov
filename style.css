@@ -180,35 +180,38 @@ body {
 .header__menu-link:hover {
   color: #3d74c7;
 }
+
 @media screen and (max-width: 992px) {
-  .header .header__menu {
+  .header__menu {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  .header .header__logo-img {
+  .header__logo-img {
     width: 60px;
   }
 }
 @media screen and (max-width: 576px) {
-  .header .header__navigation {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .header__navigation {
     gap: 10px;
   }
-  .header .header__logo-img {
+  .header__logo-img {
     width: 50px;
   }
-  .header .header__logo-link {
+  .header__logo-link {
     width: 255px;
   }
-  .header .header__svg {
-    width: 35px;
-    margin-right: 5px;
-  }
-  .header .header__logo-title {
-    font-size: 20px;
+  .header__logo-title {
+    display: none;
   }
 }
-
 .hero {
   background: url(./assets/img/bg.jpg);
   background-repeat: no-repeat;
@@ -265,7 +268,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero {
-    background: url(./assets/img/bg-small.jpg);
+    background: url(./assets/img/bgsmall111.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 32% 40%;
@@ -290,43 +293,30 @@ body {
 }
 @media screen and (max-width: 576px) {
   .hero {
+    display: flex;
+    align-items: center;
     background-position: 34% 0;
-    height: 60vh;
-  }
-  .hero__inner {
-    height: calc(75vh - 100px);
-  }
-  .hero__title {
-    font-size: 22px;
-    max-width: 274px;
-  }
-  .hero__subtitle {
-    margin: 10px 0 15px;
-  }
-  .hero__link {
-    padding: 8px 20px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .hero {
-    background-position: 35% 0;
-    height: 45vh;
-  }
-  .hero__inner {
-    height: calc(60vh - 100px);
+    height: 100vh;
   }
   .hero__wrapper {
+    max-width: 490px;
     margin-left: 0;
+    text-align: center;
   }
   .hero__title {
-    font-size: 22px;
-    max-width: 274px;
+    font-size: 38px;
+    max-width: none;
+    margin: 0 auto 20px;
   }
   .hero__subtitle {
-    margin: 10px 0 15px;
+    font-size: 23px;
+    margin: 10px 0 25px;
+    max-width: none;
   }
   .hero__link {
-    padding: 8px 20px;
+    padding: 10px 30px;
+    background-color: #3865aa;
+    border: none;
   }
 }
 .schedule {

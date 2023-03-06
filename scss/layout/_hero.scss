@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 768px) {
     .hero {
-        background: url(./assets/img/bg-small.jpg);
+        background: url(./assets/img/bgsmall111.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 32% 40%;
@@ -95,53 +95,40 @@
 
 @media screen and (max-width: 576px) {
     .hero {
+        display: flex;
+        align-items: center;
         background-position: 34% 0;
-        height: 60vh;
+        height: 100vh;
     }
 
-    .hero__inner {
-        height: calc(75vh - 100px);
+    .hero__wrapper {
+        max-width: 490px;
+        margin-left: 0;
+        text-align: center;
     }
 
     .hero__title {
-        font-size: 22px;
-        max-width: 274px;
+        font-size: 38px;
+        max-width: none;
+        margin: 0 auto 20px;
     }
 
     .hero__subtitle {
-        margin: 10px 0 15px;
+        font-size: 23px;
+        margin: 10px 0 25px;
+        max-width: none;
     }
 
     .hero__link {
-        padding: 8px 20px;
+        padding: 10px 30px;
+        background-color: #3865aa;
+        border: none;
     }
     
 }
 
 @media screen and (max-width: 360px) {
-    .hero {
-        background-position: 35% 0;
-        height: 45vh;
-    }
 
-    .hero__inner {
-        height: calc(60vh - 100px);
-    }
+    
 
-    .hero__wrapper {
-        margin-left: 0;
-    }
-
-    .hero__title {
-        font-size: 22px;
-        max-width: 274px;
-    }
-
-    .hero__subtitle {
-        margin: 10px 0 15px;
-    }
-
-    .hero__link {
-        padding: 8px 20px;
-    }
 }
