@@ -465,7 +465,7 @@ body {
   margin-bottom: 10px;
 }
 .church__right-text {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .church__church-img {
@@ -482,7 +482,7 @@ body {
   display: none;
 }
 .church__right-title {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 .church__wrapper-calendar {
@@ -540,7 +540,7 @@ body {
     gap: 15px;
   }
   .church__right-subtitle {
-    font-size: 24px;
+    font-size: 26px;
   }
   .church__right-link {
     margin-top: 10px;
@@ -573,7 +573,7 @@ body {
   margin-bottom: 10px;
 }
 .charity__text {
-  font-size: 18px;
+  font-size: 20px;
   margin: 15px 0 25px;
 }
 .news {
@@ -647,6 +647,11 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+  .gallery__box {
+    columns: 2;
+  }
+}
 .footer {
   background-color: #000E2A;
   color: var(--color-white);
@@ -700,7 +705,7 @@ body {
   flex-basis: 350px;
 }
 .footer__wrapper-text {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 .footer__wrapper-left-phone {
@@ -801,7 +806,7 @@ body {
     gap: 15px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 660px) {
   .footer__inner {
     padding: 25px 0;
   }

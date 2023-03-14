@@ -14,3 +14,15 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .gallery__box {
+        columns: 2;
+    }
+}
+
+// @media screen and (max-width: 576px) {
+//     .gallery__box {
+//         columns: 2;
+//     }
+// }
+

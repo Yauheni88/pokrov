@@ -61,7 +61,7 @@
     }
 
     &__wrapper-text {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
@@ -196,7 +196,7 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 660px) {
     .footer__inner {
         padding: 25px 0;
     }
