@@ -568,6 +568,9 @@ body {
   .church__sunday-right {
     width: 100%;
   }
+  .church__day-icon a img {
+    margin: 0 auto;
+  }
 }
 .charity {
   background-color: var(--bg-color);
