@@ -358,11 +358,10 @@ main {
     display: flex;
     align-items: center;
     background-position: 45% 0;
-    height: 70vh;
+    height: 100vh;
   }
   .hero__inner {
-    height: 70vh;
-    max-height: 768px;
+    height: 100vh;
   }
   .hero__wrapper {
     text-align: center;
@@ -383,9 +382,6 @@ main {
     padding: 10px 30px;
     background-color: var(--accent-color-dark);
     border: none;
-  }
-  .hero__arrow-down {
-    display: none;
   }
 }
 @media screen and (max-width: 400px) {
