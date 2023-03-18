@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/fancybox/fancybox.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Pokrov.by</title>
 </head>
@@ -12,7 +14,7 @@
     <main>
         <header class="header">
             <div class="container">
-                <nav class="header__navigation">
+                <nav class="header__navigation" data-aos="fade-up">
                     <div class="header__logo">
                         <a href="#" class="header__logo-link">
                             <!-- <svg class="header__svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="134.000000pt" height="246.000000pt" viewBox="0 0 134.000000 246.000000" preserveAspectRatio="xMidYMid meet">
@@ -56,13 +58,13 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
-                    <div class="hero__wrapper">
+                    <div class="hero__wrapper" data-aos="fade-up">
                         <h1 class="hero__title">Храм Покрова Пресвятой Богородицы</h1>
                         <p class="hero__subtitle">Приветствуем всех Вас на сайте Храма Покрова Пресвятой Богородицы!</p>
                         <a href="#" class="hero__link">О храме</a>
                     </div>
                     <a href="#schedule" class="hero__svg-link">
-                        <svg class="hero__arrow-down" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513.000000 305.000000" preserveAspectRatio="xMidYMid meet">
+                        <svg class="hero__arrow-down" data-aos="fade-up" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513.000000 305.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,305.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                                 <path class="hero__arrow-path" d="M222 3026 c-193 -63 -272 -286 -159 -451 27 -40 2248 -2436 2307 -2489 62 -56 122 -80 200 -80 95 1 150 28 242 122 41 42 567 608 1168 1257 860 928 1098 1191 1117 1232 33 71 39 137 19 204 -31 109 -104 177 -219 205 -62 16 -72 16 -133 1 -40 -10 -84 -30 -110 -49 -25 -18 -502 -526 -1061 -1128 -559 -602 -1020 -1095 -1024 -1095 -4 0 -471 500 -1038 1110 -797 858 -1043 1117 -1082 1139 -61 35 -159 44 -227 22z"/>
                             </g>
@@ -75,150 +77,170 @@
         <section class="schedule section" id="schedule">
             <div class="container">
                 <div class="schedule__inner">
-                    <h2 class="schedule__title title">Расписание Богослужений</h2>
+                    <h2 class="schedule__title title" data-aos="fade-up">Расписание Богослужений</h2>
                     <!-- Slider main container -->
                     <div class="schedule__swiper swiper">
                         <!-- Additional required wrapper -->
                         <div class="schedule__swiper-wrapper swiper-wrapper">
                             <!-- Slides -->
-                            <div class="schedule__slide swiper-slide">
+                            <div class="schedule__slide swiper-slide" data-aos="fade-up">
                                 <div class="schedule__card-top">
-                                    <div class="schedule__date">2</div>
+                                    <div class="schedule__date">18</div>
                                     <div class="schedule__month-day">
-                                        <p class="schedule__month">января</p>
-                                        <p class="schedule__day">вторник</p>
+                                        <p class="schedule__month">марта</p>
+                                        <p class="schedule__day">суббота</p>
                                     </div>
                                 </div>
                                 <div class="schedule__card-bottom">
-                                    <div class="schedule__celebration">Рождественский сочельник</div>
+                                    <div class="schedule__celebration">Поминовение усопших.</div>
                                     <ul class="schedule__list">
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">8:30</div>
-                                            <div class="schedule__item-description">Исповедь</div>
+                                            <div class="schedule__item-description">Исповедь.</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">8:40</div>
+                                            <div class="schedule__item-description">Часы.</div>
                                         </li>
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">9:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-description">Божественная литургия.</div>
                                         </li>
                                         <li class="schedule__list-item">
-                                            <div class="schedule__item-time">10:45</div>
-                                            <div class="schedule__item-description">Поздравление учащихся Воскресной школы.</div>
-                                        </li>
-                                        <li class="schedule__list-item">
-                                            <div class="schedule__item-time">13:00</div>
+                                            <div class="schedule__item-time">11:00</div>
                                             <div class="schedule__item-description">Панихида.</div>
                                         </li>
                                         <li class="schedule__list-item">
-                                            <div class="schedule__item-time">13:45</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-time">18:00</div>
+                                            <div class="schedule__item-description">Всенощное бдение с выносом Креста.</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">18:30</div>
+                                            <div class="schedule__item-description">Исповедь.</div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="schedule__slide swiper-slide">
+
+                            <div class="schedule__slide swiper-slide" data-aos="fade-up">
                                 <div class="schedule__card-top">
-                                    <div class="schedule__date">11</div>
+                                    <div class="schedule__date">19</div>
                                     <div class="schedule__month-day">
-                                        <p class="schedule__month">января</p>
-                                        <p class="schedule__day">вторник</p>
+                                        <p class="schedule__month">марта</p>
+                                        <p class="schedule__day">воскресенье</p>
                                     </div>
                                 </div>
                                 <div class="schedule__card-bottom">
-                                    <div class="schedule__celebration">Рождественский сочельник</div>
+                                    <div class="schedule__celebration">Неделя Крестопоклонная. Ченстоховской иконы Божией Матери.</div>
                                     <ul class="schedule__list">
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">8:30</div>
+                                            <div class="schedule__item-description">Исповедь.</div>
+                                        </li>
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">9:00</div>
                                             <div class="schedule__item-description">Божественная литургия</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">10:30</div>
+                                            <div class="schedule__item-description">Молебен.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="schedule__slide swiper-slide" data-aos="fade-up">
+                                <div class="schedule__card-top">
+                                    <div class="schedule__date">22</div>
+                                    <div class="schedule__month-day">
+                                        <p class="schedule__month">марта</p>
+                                        <p class="schedule__day">среда</p>
+                                    </div>
+                                </div>
+                                <div class="schedule__card-bottom">
+                                    <div class="schedule__celebration">40 мучеников, в Севастийском озере мучившихся.</div>
+                                    <ul class="schedule__list">
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">7:30</div>
+                                            <div class="schedule__item-description">Исповедь.</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">8:00</div>
+                                            <div class="schedule__item-description">Утреня.</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">8:30</div>
+                                            <div class="schedule__item-description">Литургия Преждеосвященных Даров.</div>
                                         </li>
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">10:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-description">Молебен.</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">18:00</div>
+                                            <div class="schedule__item-description">Молебен с акафистом Страстям Христовым.</div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="schedule__slide swiper-slide">
+
+                            <div class="schedule__slide swiper-slide" data-aos="fade-up">
                                 <div class="schedule__card-top">
-                                    <div class="schedule__date">2</div>
+                                    <div class="schedule__date">25</div>
                                     <div class="schedule__month-day">
                                         <p class="schedule__month">января</p>
                                         <p class="schedule__day">вторник</p>
                                     </div>
                                 </div>
                                 <div class="schedule__card-bottom">
-                                    <div class="schedule__celebration">Рождественский сочельник</div>
+                                    <div class="schedule__celebration">Поминовение усопших.</div>
                                     <ul class="schedule__list">
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">8:30</div>
-                                            <div class="schedule__item-description">Исповедь</div>
+                                            <div class="schedule__item-description">Исповедь.</div>
+                                        </li>
+                                        <li class="schedule__list-item">
+                                            <div class="schedule__item-time">8:40</div>
+                                            <div class="schedule__item-description">Часы.</div>
                                         </li>
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">9:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-description">Божественная литургия.</div>
                                         </li>
                                         <li class="schedule__list-item">
-                                            <div class="schedule__item-time">10:45</div>
-                                            <div class="schedule__item-description">Поздравление учащихся Воскресной школы.</div>
-                                        </li>
-                                        <li class="schedule__list-item">
-                                            <div class="schedule__item-time">13:00</div>
+                                            <div class="schedule__item-time">11:00</div>
                                             <div class="schedule__item-description">Панихида.</div>
                                         </li>
-                                        <li class="schedule__list-item">
-                                            <div class="schedule__item-time">13:45</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="schedule__slide swiper-slide">
+
+                            <div class="schedule__slide swiper-slide" data-aos="fade-up">
                                 <div class="schedule__card-top">
-                                    <div class="schedule__date">18</div>
+                                    <div class="schedule__date">26</div>
                                     <div class="schedule__month-day">
-                                        <p class="schedule__month">января</p>
-                                        <p class="schedule__day">вторник</p>
+                                        <p class="schedule__month">марта</p>
+                                        <p class="schedule__day">воскресенье</p>
                                     </div>
                                 </div>
                                 <div class="schedule__card-bottom">
-                                    <div class="schedule__celebration">Рождественский сочельник</div>
+                                    <div class="schedule__celebration">Преподобного Иоанна Лествичника.</div>
                                     <ul class="schedule__list">
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">9:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-description">Божественная литургия.</div>
                                         </li>
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">9:30</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-description">Божественная литургия.</div>
                                         </li>
                                         <li class="schedule__list-item">
                                             <div class="schedule__item-time">11:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="schedule__slide swiper-slide">
-                                <div class="schedule__card-top">
-                                    <div class="schedule__date">18</div>
-                                    <div class="schedule__month-day">
-                                        <p class="schedule__month">января</p>
-                                        <p class="schedule__day">вторник</p>
-                                    </div>
-                                </div>
-                                <div class="schedule__card-bottom">
-                                    <div class="schedule__celebration">Рождественский сочельник</div>
-                                    <ul class="schedule__list">
-                                        <li class="schedule__list-item">
-                                            <div class="schedule__item-time">9:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-description">Божественная литургия.</div>
                                         </li>
                                         <li class="schedule__list-item">
-                                            <div class="schedule__item-time">9:30</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
-                                        </li>
-                                        <li class="schedule__list-item">
-                                            <div class="schedule__item-time">11:00</div>
-                                            <div class="schedule__item-description">Божественная литургия</div>
+                                            <div class="schedule__item-time">12:00</div>
+                                            <div class="schedule__item-description">Молебен.</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -226,7 +248,7 @@
                         </div>
                         <div class="schedule__pagination swiper-pagination"></div>
                     </div>
-                    <a href="#" class="schedule__link">Полное расписание Богослужений</a>
+                    <a href="#" class="schedule__link" data-aos="fade-up">Полное расписание Богослужений</a>
                 </div>
             </div>
         </section>
@@ -234,13 +256,13 @@
         <section class="church section">
             <div class="container">
                 <div class="church__inner">
-                    <h2 class="church__title title">О храме</h2>
+                    <h2 class="church__title title" data-aos="fade-up">О храме</h2>
                     <div class="church__box church__box1 ">
                         <div class="church__wrapper">
-                            <div class="church__left">
+                            <div class="church__left" data-aos="fade-right">
                                 <img class="church__church-img" src="./assets/img/IMG_6022-1024x803.jpg" alt="">
                             </div>
-                            <div class="church__right">
+                            <div class="church__right" data-aos="fade-left">
                                 <h3 class="church__right-subtitle">Храм Покрова Пресвятой Богородицы.</h3>
                                 <p class="church__right-text">
                                     Богослужения постоянно совершаются по воскресеньям (8:30 – исповедь, 9:00 – Часы,
@@ -256,7 +278,7 @@
                     </div>
                     <div class="church__box">
                         <div class="church__wrapper">
-                            <div class="church__left2">
+                            <div class="church__left2" data-aos="fade-right">
                                 <h3 class="church__right-subtitle">Настоятель Храма Покрова Пресвятой Богородицы.</h3>
                                 <p class="church__right-title">
                                     Иерей Иоанн Ясюкевич.
@@ -268,17 +290,17 @@
                                 </p>
                                 <a class="church__right-link" href="#">Читать далее</a>
                             </div>
-                            <div class="church__right2">
+                            <div class="church__right2" data-aos="fade-left">
                                 <img class="church__church-img" src="./assets/img/DSCF3359_min.jpg" alt="Настоятель Храма">
                             </div>
                         </div>
                     </div>
                     <div class="church__box">
                         <div class="church__wrapper">
-                            <div class="church__sunday-left">
+                            <div class="church__sunday-left" data-aos="fade-right">
                                 <img class="church__sunday-image1" src="./assets/img/sunday.jpg" alt="">
                             </div>
-                            <div class="church__sunday-right">
+                            <div class="church__sunday-right" data-aos="fade-left">
                                 <h3 class="church__right-subtitle">Воскресная школа.</h3>
                                 <p class="church__right-text">
                                     При приходе храма Покрова Пресвятой Богородицы аг. Слобода Озерицко-Слободского с/с проходят занятия в воскресной школе.
@@ -295,13 +317,13 @@
                     </div>
                     <div class="church__box">
                         <div class="church__wrapper church__wrapper-calendar">
-                            <div class="church__right-calendar">
+                            <div class="church__right-calendar" data-aos="fade-right">
                                 <h3 class="church__right-subtitle">Православный календарь.</h3>
                                 <div class="church__calendar-description">
                                     <script language="Javascript" src="https://script.pravoslavie.ru/calendar.php"></script>
                                 </div>
                             </div>
-                            <div class="church__left-calendar">
+                            <div class="church__left-calendar" data-aos="fade-left">
                                 <div class="church__day-icon">
                                     <script language="Javascript" src="https://script.pravoslavie.ru/icon.php"></script>
                                 </div>
@@ -315,11 +337,11 @@
         <section class="charity section">
             <div class="container">
                 <div class="charity__inner">
-                    <h2 class="charity__title title">Пожертвования</h2>
-                    <p class="charity__subtitle">Дорогие братья и сестры!</p>
-                    <p class="charity__text">Каждый уделяй по расположению сердца, не с огорчением и не с принуждением, 
+                    <h2 class="charity__title title" data-aos="fade-up">Пожертвования</h2>
+                    <p class="charity__subtitle" data-aos="fade-up">Дорогие братья и сестры!</p>
+                    <p class="charity__text" data-aos="fade-up">Каждый уделяй по расположению сердца, не с огорчением и не с принуждением, 
                         ибо доброхотно дающего любит Бог.</p>
-                    <a class="charity__link" href="#">Сделать пожертвование</a>
+                    <a class="charity__link" href="#" data-aos="fade-up">Сделать пожертвование</a>
                 </div>
             </div>
         </section>
@@ -327,16 +349,16 @@
         <section class="news section">
             <div class="container">
                 <div class="news__inner">
-                    <h2 class="news__title title">Новости храма</h2>
+                    <h2 class="news__title title" data-aos="fade-up">Новости храма</h2>
                     <div class="news__box">
-                        <article class="news__article">
+                        <article class="news__article" data-aos="fade-up">
                             <div class="news__thumb">
                                 <img class="news__image" src="./assets/img/news4.jpg" alt="">
                             </div>
                             <h3 class="news__article-title">Рождество Христово 2023г</h3>
                             <a href="#" class="news__article-link">Читать далее</a>
                         </article>
-                        <article class="news__article">
+                        <article class="news__article" data-aos="fade-up">
                             <div class="news__thumb">
                                 <img class="news__image" src="./assets/img/news6.jpg" alt="">
                             </div>
@@ -344,7 +366,7 @@
                             </h3>
                             <a href="#" class="news__article-link">Читать далее</a>
                         </article>
-                        <article class="news__article">
+                        <article class="news__article" data-aos="fade-up">
                             <div class="news__thumb">
                                 <img class="news__image" src="./assets/img/news5.jpg" alt="">
                             </div>
@@ -352,7 +374,7 @@
                             <a href="#" class="news__article-link">Читать далее</a>
                         </article>
                     </div>
-                    <a href="#" class="news__link">Все новости</a>
+                    <a href="#" class="news__link" data-aos="fade-up">Все новости</a>
                 </div>
             </div>
         </section>
@@ -360,23 +382,23 @@
         <section class="gallery section">
             <div class="container">
                 <div class="gallery__inner">
-                    <h2 class="gallery__title title">Галерея</h2>
-                    <div class="gallery__box">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/0P1A7714_o-1024x683.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/DSCF2777-768x1024.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/0P1A7783_min.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/DSCF4876-1024x767.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/DSCF4991-1024x768.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/IMG_6784_o-683x1024.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/DSCF2811-1024x768.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/IMG_6907_o.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/DSCF4897-1024x768.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/DSCF4687-1024x768.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/IMG_6022-1024x803.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/IMG_7049_o.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/IMG_6664_o.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/MU7A9029_min.jpg" alt="">
-                        <img class="gallery__image" loading="lazy" src="./assets/img/gallary/IMG_7128_min.jpg" alt="">
+                    <h2 class="gallery__title title" data-aos="fade-up">Галерея</h2>
+                    <div class="gallery__box" data-aos="fade-up">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/DSCF2777-768x1024.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/0P1A7714_o-1024x683.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/0P1A7783_min.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/DSCF4991-1024x768.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/IMG_6784_o-683x1024.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/DSCF4876-1024x767.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/DSCF2811-1024x768.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/IMG_6907_o.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/DSCF4897-1024x768.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/DSCF4687-1024x768.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/IMG_6022-1024x803.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/IMG_7049_o.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/IMG_6664_o.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/MU7A9029_min.jpg" alt="">
+                        <img class="gallery__image" loading="lazy" data-fancybox="gallery" src="./assets/img/gallary/IMG_7128_min.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -385,13 +407,13 @@
         <section class="map section">
             <div class="map__inner">
                 <div class="container">
-                    <h2 class="map__title title">Как добраться</h2>
+                    <h2 class="map__title title" data-aos="fade-up">Как добраться</h2>
                     <div class="map__wrapper">
-                        <p class="map__text text">От станции метро «Восток» (выход из метро возле торгового центра Dana Mall) маршрутным такси «Минск – Смолевичи» до остановки «Слобода Озерицкая»;</p>
-                        <p class="map__text text">От станции метро «Уручье» (выход из метро к автобусной остановке в направлении выезда из Минска) маршрутным такси №318 «Минск – Слобода».</p>
+                        <p class="map__text text" data-aos="fade-up">От станции метро «Восток» (выход из метро возле торгового центра Dana Mall) маршрутным такси «Минск – Смолевичи» до остановки «Слобода Озерицкая»;</p>
+                        <p class="map__text text" data-aos="fade-up">От станции метро «Уручье» (выход из метро к автобусной остановке в направлении выезда из Минска) маршрутным такси №318 «Минск – Слобода».</p>
                     </div>
                 </div>
-                <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3942.9949034718998!2d27.88196806673797!3d54.01131642916007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbb59efdc9451b%3A0xaf46c80cad4479aa!2z0KXRgNCw0Lwg0J_QvtC60YDQvtCy0LAg0J_RgNC10YHQstGP0YLQvtC5INCR0L7Qs9C-0YDQvtC00LjRhtGL!5e0!3m2!1sru!2sby!4v1674220715675!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map__iframe" data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3942.9949034718998!2d27.88196806673797!3d54.01131642916007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbb59efdc9451b%3A0xaf46c80cad4479aa!2z0KXRgNCw0Lwg0J_QvtC60YDQvtCy0LAg0J_RgNC10YHQstGP0YLQvtC5INCR0L7Qs9C-0YDQvtC00LjRhtGL!5e0!3m2!1sru!2sby!4v1674220715675!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -399,10 +421,10 @@
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__wrapper-top">
-                        <h2 class="footer__wrapper-top-title">Контакты</h2>
+                        <h2 class="footer__wrapper-top-title" data-aos="fade-up">Контакты</h2>
                         <div class="footer__wrapper-top-rigth">
-                            <p class="footer__wrapper-top-text">Храм Покрова Пресвятой Богородицы</p>
-                            <svg class="footer__svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="134.000000pt" height="246.000000pt" viewBox="0 0 134.000000 246.000000" preserveAspectRatio="xMidYMid meet">
+                            <p class="footer__wrapper-top-text" data-aos="fade-up">Храм Покрова Пресвятой Богородицы</p>
+                            <svg class="footer__svg" data-aos="fade-up" version="1.0" xmlns="http://www.w3.org/2000/svg" width="134.000000pt" height="246.000000pt" viewBox="0 0 134.000000 246.000000" preserveAspectRatio="xMidYMid meet">
                                 <g class="footer__g" transform="translate(0.000000,246.000000) scale(0.100000,-0.100000)"
                                 fill="#ffffff" stroke="none">
                                 <path d="M540 2275 l0 -125 -125 0 -125 0 0 -105 0 -105 125 0 126 0 -3 -122
@@ -419,7 +441,7 @@
                     </div>
                     <hr class="footer__hr">
                     <div class="footer__wrapper-bottom">
-                        <div class="footer__wrapper-bottom-left">
+                        <div class="footer__wrapper-bottom-left" data-aos="fade-up">
                             <p class="footer__wrapper-text">Приход храма Покрова Пресвятой Богородицы 
                                 аг. Слобода
                             </p>
@@ -430,7 +452,7 @@
                             <a href="tel:+375292783226" class="footer__wrapper-left-phone">Телефон священника: +37529-278-32-26</a>
                             <a href="tel:+375177637497" class="footer__wrapper-left-phone">Телефон храма: +3751776-3-74-97</a>
                         </div>
-                        <div class="footer__wrapper-bottom-center">
+                        <div class="footer__wrapper-bottom-center" data-aos="fade-up">
                             <div class="footer__wrapper-center-email">
                                 <span class="footer__center-span">E-mail:</span>
                                 <a href="mailto:i.yasiukevich@mail.ru" class="footer__wrapper-email">i.yasiukevich@mail.ru</a>
@@ -453,7 +475,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="footer__wrapper-bottom-rigth">
+                        <div class="footer__wrapper-bottom-rigth" data-aos="fade-up">
                             <p class="footer__wrapper-rigths">© 2023 Храм Покрова Пресвятой Богородицы.</p>
                         </div>
                     </div>
@@ -461,7 +483,10 @@
             </div>
         </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="./assets/js/swiper.js" defer></script>
+    <script src="./assets/js/aos.js" defer></script>
+    <script src="./assets/fancybox/fancybox.umd.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
