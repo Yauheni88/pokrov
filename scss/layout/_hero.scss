@@ -88,6 +88,21 @@
     
 }
 
+@media (max-width: 992px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        min-height: 70vw;
+        max-width: 100vw;
+    }
+
+    .hero__inner {
+        height: 100vh;
+        min-height: 70vw;
+        max-width: 100vw;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .hero {
         background: url(./assets/img/bg-small.jpg);
@@ -132,7 +147,8 @@
     }
 
     .hero__inner {
-        height: 70vh;;
+        height: 70vh;
+        max-height: 768px;
     }
 
     .hero__wrapper {
