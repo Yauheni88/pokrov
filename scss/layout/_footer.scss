@@ -84,7 +84,7 @@
 
     &__center-span {
         display: block;
-        font-size: 21px;
+        font-size: 23px;
         margin-bottom: 15px;
         color: #4CA1DA;
     }
@@ -109,7 +109,7 @@
     &__wrapper-link {
         text-decoration: none;
         color: var(--color-white);
-        font-size: 18px;
+        font-size: 20px;
     }
 
     &__wrapper-center-social {
@@ -130,7 +130,7 @@
     }
 
     &__wrapper-rigths {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -164,6 +164,10 @@
 
     .footer__wrapper-top-title {
         font-size: 50px;
+    }
+
+    .footer__svg {
+        width: 35px;
     }
 }
 
