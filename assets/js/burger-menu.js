@@ -2,7 +2,7 @@ const menu = document.querySelector('.header__navigation');
 const menuBtn = document.querySelector('.header__hamburger');
 const body = document.body;
 const menuBG = document.querySelector('.header__menu-box');
-console.log(menuBG)
+
 if (menu && menuBtn) {
     menuBtn.addEventListener('click', () => {
         menu.removeAttribute('data-aos'); 
@@ -34,17 +34,17 @@ if (menu && menuBtn) {
 
 /*=======================================================*/
 
-// const anchors = document.querySelectorAll('a[href*="#"]');
+const anchors = document.querySelectorAll('a[href*="#"]');
 
-// anchors.forEach(anchor => {
-//     anchor.addEventListener('click', event => {
-//         event.preventDefault();
+anchors.forEach(anchor => {
+    anchor.addEventListener('click', event => {
+        event.preventDefault();
 
-//         const blockID = anchor.getAttribute('href').substring(1);
+        const blockID = anchor.getAttribute('href').substring(1);
 
-//         document.getElementById(blockID).scrollIntoView({
-//             behavior: 'smooth',
-//             block: 'start'
-//         })
-//     })
-// })
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+})
