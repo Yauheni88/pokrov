@@ -1,15 +1,7 @@
 AOS.init();
 
+const height = document.documentElement.clientHeight;
+console.log(height);
 
-// const smoothLinks = document.querySelectorAll('a[href^="#"]');
-// for (let smoothLink of smoothLinks) {
-//     smoothLink.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         const id = smoothLink.getAttribute('href');
-
-//         document.querySelector(id).scrollIntoView({
-//             behavior: 'smooth',
-//             block: 'start'
-//         });
-//     });
-// };
+const hero = document.getElementById('hero');
+hero.style.height = height;
