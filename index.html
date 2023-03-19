@@ -14,33 +14,37 @@
     <main>
         <header class="header">
             <div class="container">
-                <nav class="header__navigation" data-aos="fade-up">
-                    <div class="header__logo">
-                        <a href="#" class="header__logo-link">
-                            <img class="header__logo-img" src="./assets/img/6.png" alt="Логотип">
-                        </a>
+                <div class="header__inner">
+                    <a href="index.html" class="header__logo-link">
+                        <img class="header__logo-img" src="./assets/img/6.png" alt="Логотип">
+                    </a>
+                    <div class="header__menu-box">
+                        <nav class="header__navigation" data-aos="fade-up">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a href="index.html" class="header__menu-link">Главная</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#church" class="header__menu-link">О храме</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Прихожанам</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#news" class="header__menu-link">Новости</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#footer" class="header__menu-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <ul class="header__menu">
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Главная</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#church" class="header__menu-link">О храме</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Прихожанам</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#news" class="header__menu-link">Новости</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="#footer" class="header__menu-link">Контакты</a>
-                        </li>
-                    </ul>
                     <div class="header__hamburger">
                         <span class="header__hamburger-line"></span>
+                        <span class="header__hamburger-line"></span>
+                        <span class="header__hamburger-line"></span>
                     </div>
-                </nav>
+                </div>
             </div>
         </header>
 
@@ -450,10 +454,10 @@
                                 <span class="footer__center-span">Ссылки:</span>
                                 <ul class="footer__wrapper-list">
                                     <li class="footer__wrapper-item">
-                                        <a href="" class="footer__wrapper-link">Расписание богослужений</a>
+                                        <a href="#schedule" class="footer__wrapper-link">Расписание богослужений</a>
                                     </li>
                                     <li class="footer__wrapper-item">
-                                        <a href="" class="footer__wrapper-link">Пожертвования</a>
+                                        <a href="#charity" class="footer__wrapper-link">Пожертвования</a>
                                     </li>
                                 </ul>
                             </div>
@@ -464,7 +468,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="footer__wrapper-bottom-rigth" data-aos="fade-up">
+                        <div class="footer__wrapper-bottom-rigth">
                             <p class="footer__wrapper-rigths">© 2023 Храм Покрова Пресвятой Богородицы.</p>
                         </div>
                     </div>
@@ -476,6 +480,7 @@
     <script src="./assets/js/swiper.js" defer></script>
     <script src="./assets/js/aos.js" defer></script>
     <script src="./assets/fancybox/fancybox.umd.js" defer></script>
+    <script src="./assets/js/burger-menu.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
