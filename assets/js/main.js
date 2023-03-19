@@ -1,8 +1,7 @@
 AOS.init();
 
-const height = document.documentElement.clientHeight;
-console.log(height);
+const clientHeight = document.documentElement.clientHeight;
 
 const hero = document.getElementById('hero');
-alert(height);
-hero.style.height = height;
+hero.style.height = clientHeight;
+alert(clientHeight);
