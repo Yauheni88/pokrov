@@ -206,6 +206,10 @@ main {
   display: none;
 }
 
+.header__menu-svg {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .header__logo-img {
     width: 40px;
@@ -232,7 +236,7 @@ main {
     flex-direction: column;
     background-color: #000E2A;
     box-shadow: 4px 2px 6px rgba(3, 2, 43, 0.5);
-    transition: all 0.2s;
+    transition: left 0.3s;
     overflow: auto;
   }
   .header__nav-title {
@@ -264,11 +268,20 @@ main {
     align-items: center;
     gap: 25px;
   }
+  .header__menu-item:hover .header__menu-svg path {
+    fill: var(--accent-color);
+  }
+  .header__menu-item:hover .header__menu-svg {
+    fill: var(--accent-color);
+  }
   .header__menu-svg {
+    display: block;
     width: 28px;
     height: auto;
+    transition: fill 1s;
   }
   .header__menu-svg path {
+    transition: fill 0.3s;
     fill: var(--color-white);
   }
   .header__menu-item + .header__menu-item {

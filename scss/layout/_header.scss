@@ -74,6 +74,10 @@
     display: none;
 }
 
+.header__menu-svg {
+    display: none;
+}
+
 // ---------------------------------- media ----------------------------------//
 
 
@@ -108,7 +112,7 @@
         flex-direction: column;
         background-color: #000E2A;
         box-shadow: 4px 2px 6px rgba(3, 2, 43, 0.5);
-        transition: all .2s;
+        transition: left .3s;
         overflow: auto;
     }
     .header__nav-title {
@@ -142,13 +146,22 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        &:hover .header__menu-svg path{
+            fill: var(--accent-color);
+        }
+        &:hover .header__menu-svg  {
+            fill: var(--accent-color);
+        }
     }
 
     .header__menu-svg {
+        display: block;
         width: 28px;
         height: auto;
+        transition: fill 1s;
 
         path {
+            transition: fill .3s;
             fill: var(--color-white);
         }
     }
