@@ -2,6 +2,7 @@ const menu = document.querySelector('.header__navigation');
 const menuBtn = document.querySelector('.header__hamburger');
 const body = document.body;
 const menuBG = document.querySelector('.header__menu-box');
+const html = document.documentElement;
 
 if (menu && menuBtn) {
     menuBtn.addEventListener('click', () => {
@@ -9,6 +10,7 @@ if (menu && menuBtn) {
         menu.classList.toggle('active');
         menuBtn.classList.toggle('active');
         body.classList.toggle('lock');
+        html.classList.toggle('lock');
         menuBG.classList.toggle('menu-bg');
     })
 
@@ -17,6 +19,7 @@ if (menu && menuBtn) {
             menu.classList.remove('active');
             menuBtn.classList.remove('active');
             body.classList.remove('lock');
+            html.classList.remove('lock');
             menuBG.classList.remove('menu-bg');
         }
         
@@ -27,6 +30,17 @@ if (menu && menuBtn) {
             menu.classList.remove('active');
             menuBtn.classList.remove('active');
             body.classList.remove('lock');
+            html.classList.remove('lock');
+            menuBG.classList.remove('menu-bg');
+        })
+    })
+
+    menu.querySelectorAll('.header__dropdown-link').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+            menuBtn.classList.remove('active');
+            body.classList.remove('lock');
+            html.classList.remove('lock');
             menuBG.classList.remove('menu-bg');
         })
     })

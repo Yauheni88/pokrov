@@ -1,0 +1,33 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/news';
+@import 'layout/footer';
+
+
+// ----------------- header -------------------------//
+
+.header {
+    background-color: #3865aa;
+}
+
+
+
+
+// ----------------- news -------------------------//
+
+.news {
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+}
+
+
