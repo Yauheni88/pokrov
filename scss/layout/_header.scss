@@ -24,7 +24,6 @@
 
     &__logo-link {
         display: flex;
-        // width: 339px;
         align-items: center;
         text-decoration: none;
     }
@@ -80,7 +79,7 @@
         }
 
         svg path {
-            transition: fill .5s;
+            transition: fill .3s;
         }
         &:hover svg path {
             fill: #3d74c7;
@@ -189,6 +188,9 @@
             border-radius: 0;
             box-shadow: none;
             overflow: hidden;
+            &.show {
+                box-shadow: none;
+            }
         }
     
         &__dropdown-item {
@@ -310,7 +312,7 @@
         display: block;
         width: 28px;
         height: auto;
-        transition: fill 1s;
+        transition: fill .3s;
 
         path {
             transition: fill .3s;
