@@ -28,15 +28,11 @@
 
 .full-sсhedule__table-time, .full-sсhedule__table-description, .full-sсhedule__table-date {
   padding: 7px 10px;
+  border: 1px solid var(--accent-color);
   font-weight: 400;
   font-size: 24px;
 }
 
-@media screen and (max-width: 900px) {
-  .full-sсhedule__table-time, .full-sсhedule__table-description, .full-sсhedule__table-date {
-    padding: 5px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -755,8 +751,6 @@ main {
 .full-schedule__table thead {
   background-color: var(--accent-color);
   color: var(--color-white);
-  border: 1px solid var(--accent-color);
-  text-align: left;
 }
 
 .full-sсhedule__table-body {
@@ -772,15 +766,20 @@ main {
   padding: 7px 15px;
   border: 1px solid #ccc;
 }
-.full-sсhedule__table-description {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
 @media screen and (max-width: 900px) {
   .full-sсhedule__table-body td {
     padding: 5px;
     border: 1px solid #ccc;
   }
+  .full-sсhedule__table-date {
+    padding: 5px;
+  }
+  .full-sсhedule__table-description {
+    padding: 5px;
+  }
+  .full-sсhedule__table-time {
+    padding: 5px;
+  }
 }
 
-/*# sourceMappingURL=schedule-page.css.map */
+/*# sourceMappingURL=schedule=page.css.map */

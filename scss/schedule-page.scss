@@ -67,6 +67,8 @@
         thead {
             background-color: var(--accent-color);
             color: var(--color-white);
+            border: 1px solid var(--accent-color);
+            text-align: left;
         }
     }
 }
@@ -94,9 +96,22 @@
 
     &__table-description {
         @extend %table-thead;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
     }
 
     &__table-time {
         @extend %table-thead;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .full-sсhedule {
+        &__table-body {
+            td {
+                padding: 5px;
+                border: 1px solid #ccc;
+            }
+        }
     }
 }
