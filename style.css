@@ -257,7 +257,6 @@ main {
   list-style: none;
   padding: 10px 15px;
   border-bottom: 1px solid #ccc;
-  transition: all 0.3s;
 }
 .header__dropdown-item:hover {
   background-color: var(--accent-color);
@@ -281,7 +280,6 @@ main {
 .header__dropdown-link {
   color: var(--text-color);
   text-decoration: none;
-  transition: color 0.3s;
   font-size: 21px;
 }
 
@@ -477,8 +475,8 @@ main {
   display: inline-block;
   text-align: center;
   padding: 12px 40px;
-  background-color: var(--accent-color-dark);
-  border: 1px solid var(--accent-color-dark);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   text-decoration: none;
   color: var(--color-white);
   border-radius: 5px;
@@ -487,6 +485,10 @@ main {
   font-size: 20px;
   text-shadow: 4px 2px 6px rgba(3, 2, 43, 0.69);
   transition: all ease-in 0.3s;
+}
+.hero__link:hover {
+  background-color: var(--accent-color-dark);
+  border: 1px solid var(--accent-color-dark);
 }
 .hero__svg-link {
   display: block;
@@ -678,6 +680,10 @@ main {
 .schedule__pagination {
   display: none;
 }
+.schedule__link {
+  transition: all 0.3s !important;
+}
+
 @media screen and (max-width: 576px) {
   .schedule__swiper {
     margin-bottom: 25px;

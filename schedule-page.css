@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap");
 :root {
   --color-white:#ffffff;
@@ -9,7 +10,7 @@
   --border-radius-images:8px;
 }
 
-.schedule__link {
+.full-schedule__download-btn, .schedule__link {
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -20,9 +21,16 @@
   color: var(--color-white);
   transition: all ease-in 0.3s;
 }
-.schedule__link:hover {
+.full-schedule__download-btn:hover, .schedule__link:hover {
   background-color: #3865aa;
   text-shadow: 4px 2px 6px rgba(3, 2, 43, 0.69);
+}
+
+.full-sсhedule__table-time, .full-sсhedule__table-description, .full-sсhedule__table-date {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 * {
@@ -257,7 +265,6 @@ main {
   list-style: none;
   padding: 10px 15px;
   border-bottom: 1px solid #ccc;
-  transition: all 0.3s;
 }
 .header__dropdown-item:hover {
   background-color: var(--accent-color);
@@ -281,7 +288,6 @@ main {
 .header__dropdown-link {
   color: var(--text-color);
   text-decoration: none;
-  transition: color 0.3s;
   font-size: 21px;
 }
 
@@ -703,8 +709,58 @@ main {
   background-color: #3865aa;
 }
 
-.full-shedule {
+.full-schedule {
   padding-top: 85px;
+}
+.full-schedule__inner {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.full-schedule__box {
+  margin-bottom: 25px;
+}
+.full-schedule__subtitle {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  margin: 0 auto 15px;
+  text-align: center;
+  max-width: 800px;
+}
+.full-schedule__download-btn {
+  font-size: 21px;
+  margin: 0 auto;
+  width: 150px;
+  display: block;
+}
+.full-schedule__box-overflow {
+  overflow-x: auto;
+}
+.full-schedule__table {
+  overflow-x: auto;
+  font-size: 21px;
+  line-height: 1.3;
+  vertical-align: top;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.full-schedule__table thead {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.full-sсhedule__table-body {
+  vertical-align: top;
+}
+.full-sсhedule__table-body tr {
+  cursor: pointer;
+}
+.full-sсhedule__table-body tr:hover {
+  background-color: #e4eefd;
+}
+.full-sсhedule__table-body td {
+  padding: 7px 15px;
+  border: 1px solid #ccc;
 }
 
 /*# sourceMappingURL=schedule-page.css.map */

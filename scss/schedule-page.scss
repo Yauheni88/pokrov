@@ -20,54 +20,83 @@
 
 // ----------------- full-schedule -----------------//
 
-.full-shedule {
+.full-schedule {
     padding-top: 85px;
-}
-
-.full-schedule {
-    &__inner {}
-}
-.schedule {
-    &__title {}
-}
-
-
-
-
-.full-shedule {
-
-    &__table {
-    }
-}
-.section {
-}
-.container {
-}
-.full-schedule {
 
     &__inner {
+        margin: 0 auto;
+        max-width: 1000px;
     }
 
     &__title {
     }
 
     &__box {
+        margin-bottom: 25px;
     }
 
     &__subtitle {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        margin: 0 auto 15px;
+        text-align: center;
+        max-width: 800px;
     }
 
     &__download-btn {
+        @extend %btn-blue;
+        font-size: 21px;
+        margin: 0 auto;
+        width: 150px;
+        display: block;
+    }
+
+    &__box-overflow {
+        overflow-x: auto;
+    }
+
+    &__table {
+        overflow-x: auto;
+        font-size: 21px;
+        line-height: 1.3;
+        vertical-align: top;
+        border-spacing: 0;
+        border-collapse: collapse;
+
+        thead {
+            background-color: var(--accent-color);
+            color: var(--color-white);
+        }
     }
 }
+
 .full-sсhedule {
+    
+    &__table-body {
+        vertical-align: top;
+        tr {
+            cursor: pointer;
+            &:hover {
+                background-color: #e4eefd;
+            }
+        }
+
+        td {
+            padding: 7px 15px;
+            border: 1px solid #ccc;
+        }
+    }
 
     &__table-date {
+        @extend %table-thead;
     }
 
     &__table-description {
+        @extend %table-thead;
     }
 
     &__table-time {
+        @extend %table-thead;
     }
 }
