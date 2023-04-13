@@ -15,6 +15,7 @@
 
 .header {
     background-color: #3865aa;
+
 }
 
 
@@ -26,9 +27,6 @@
     &__inner {
         margin: 0 auto;
         max-width: 1000px;
-    }
-
-    &__title {
     }
 
     &__box {
@@ -44,12 +42,30 @@
         max-width: 800px;
     }
 
-    &__download-btn {
-        @extend %btn-blue;
-        font-size: 21px;
+    &__downloadbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        max-width: 500px;
         margin: 0 auto;
-        width: 150px;
-        display: block;
+    }
+
+    &__downloadbox-text {
+        font-size: 21px;
+    }
+
+    &__downloadbox-format {
+        text-decoration: none;
+        background-color: var(--accent-color);
+        color: var(--color-white);
+        padding: 5px 10px;
+        border-radius: var(--border-radius);
+        font-size: 19px;
+        transition: background-color .3s;
+        &:hover {
+            background-color: var(--accent-color-dark);
+        }
     }
 
     &__box-overflow {
@@ -106,6 +122,12 @@
 }
 
 @media screen and (max-width: 900px) {
+    .full-schedule {
+        &__subtitle {
+            font-size: 21px;
+        }
+    }
+
     .full-sсhedule {
         &__table-body {
             td {
@@ -113,5 +135,13 @@
                 border: 1px solid #ccc;
             }
         }
+
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .full-schedule {
+        padding-top: 70px;
     }
 }
