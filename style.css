@@ -171,6 +171,14 @@ main {
   width: 40px;
   height: auto;
 }
+.header__logo-title {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-white);
+  font-weight: 400;
+}
 .header__menu {
   display: flex;
   align-items: center;
@@ -337,6 +345,9 @@ main {
   }
 }
 @media screen and (max-width: 740px) {
+  .header__logo-title {
+    display: block;
+  }
   /*============== mobile menu ==============*/
   .header__menu-box {
     position: absolute;

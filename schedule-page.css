@@ -10,7 +10,7 @@
   --border-radius-images:8px;
 }
 
-.full-schedule__download-btn, .schedule__link {
+.schedule__link {
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -21,7 +21,7 @@
   color: var(--color-white);
   transition: all ease-in 0.3s;
 }
-.full-schedule__download-btn:hover, .schedule__link:hover {
+.schedule__link:hover {
   background-color: #3865aa;
   text-shadow: 4px 2px 6px rgba(3, 2, 43, 0.69);
 }
@@ -182,6 +182,14 @@ main {
 .header__logo-img {
   width: 40px;
   height: auto;
+}
+.header__logo-title {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-white);
+  font-weight: 400;
 }
 .header__menu {
   display: flex;
@@ -349,6 +357,9 @@ main {
   }
 }
 @media screen and (max-width: 740px) {
+  .header__logo-title {
+    display: block;
+  }
   /*============== mobile menu ==============*/
   .header__menu-box {
     position: absolute;
@@ -444,6 +455,14 @@ main {
   }
   .header__logo-img {
     width: 30px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .header__inner {
+    gap: 20px;
+  }
+  .header__logo-title {
+    font-size: 16px;
   }
 }
 .schedule {
@@ -738,11 +757,28 @@ main {
   text-align: center;
   max-width: 800px;
 }
-.full-schedule__download-btn {
-  font-size: 21px;
+.full-schedule__downloadbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
   margin: 0 auto;
-  width: 150px;
-  display: block;
+}
+.full-schedule__downloadbox-text {
+  font-size: 21px;
+}
+.full-schedule__downloadbox-format {
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  font-size: 19px;
+  transition: background-color 0.3s;
+}
+.full-schedule__downloadbox-format:hover {
+  background-color: var(--accent-color-dark);
 }
 .full-schedule__box-overflow {
   overflow-x: auto;
@@ -780,9 +816,17 @@ main {
   border-right: 1px solid #ccc;
 }
 @media screen and (max-width: 900px) {
+  .full-schedule__subtitle {
+    font-size: 21px;
+  }
   .full-sсhedule__table-body td {
     padding: 5px;
     border: 1px solid #ccc;
+  }
+}
+@media screen and (max-width: 900px) {
+  .full-schedule {
+    padding-top: 70px;
   }
 }
 
