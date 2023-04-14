@@ -69,13 +69,8 @@
     &__arrow-down {
         position: absolute;
         bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: calc(50% - 15px);
         width: 30px;
-        transition: .3s ease-in;
-        &:hover {
-            width: 34px;
-        }
 
         &:hover .hero__arrow-path {
             fill: var(--accent-color-dark);
@@ -84,6 +79,7 @@
 
     &__arrow-path {
         fill: var(--accent-color);
+        transition: fill .3s ease-in;
     }
 
 
