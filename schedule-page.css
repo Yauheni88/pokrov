@@ -824,7 +824,7 @@ main {
     border: 1px solid #ccc;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 576px) {
   .full-schedule {
     padding-top: 70px;
   }

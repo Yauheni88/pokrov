@@ -37,7 +37,6 @@
     &__article-iconbox {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         gap: 20px;
     }
 
@@ -58,6 +57,14 @@
         color: #646363;
     }
 
+    &__article-svg-calendar {
+        width: 20px;
+        height: 20px;
+        path {
+            fill: #646363;
+        }
+    }
+
     &__article-date {
         font-size: 18px;
         color: #646363;
@@ -66,7 +73,8 @@
     &__article-link {
         background-color: var(--accent-color);
         color: var(--color-white);
-        padding: 5px 10px;
+        margin-top: 7px;
+        padding: 10px 15px;
         text-align: center;
         width: 150px;
         border-radius: var(--border-radius);
@@ -77,4 +85,8 @@
     }
 }
 
-
+@media screen and (max-width: 576px) {
+    .news {
+        padding-top: 70px;      
+}
+}

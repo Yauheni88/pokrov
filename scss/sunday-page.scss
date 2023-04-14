@@ -1,0 +1,107 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/news';
+@import 'layout/footer';
+@import 'news-page.scss';
+
+// ----------------- header -------------------------//
+
+.header {
+    background-color: #3865aa;
+}
+
+.sunday {
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+
+    &__inner {
+    }
+
+    &__title {
+    }
+
+	&__text-box {
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        font-size: 21px;       
+	}
+
+	&__text-box-text {
+        margin-bottom: 15px;
+	}
+
+    &__text-box-subtitle {
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+	&__text-box-list {
+
+	}
+
+	&__text-box-item {
+        list-style: none;
+        margin-bottom: 10px;
+	}
+}
+
+.news {
+
+    &__box {
+    }
+
+    &__article {
+    }
+
+    &__thumb {
+    }
+
+    &__image {
+    }
+
+    &__article-title {
+    }
+
+    &__article-iconbox {
+    }
+
+    &__article-viewsbox {
+    }
+
+    &__article-svg-calendar {
+    }
+
+    &__article-date {
+    }
+
+    &__article-svg {
+    }
+
+    &__article-svg-path {
+    }
+
+    &__article-number-views {
+    }
+
+    &__article-link {
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .news {
+        padding-top: 70px;      
+    }
+}
