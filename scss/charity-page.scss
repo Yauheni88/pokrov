@@ -1,0 +1,249 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+.header {
+    background-color: #3865aa;
+}
+
+.charitypage {
+
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    &__wrapper {
+        
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48%;
+        background-color: var(--accent-color);
+        padding: 25px;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: background-color .3s;
+        &:hover {
+            background-color: var(--accent-color-dark);
+        }
+        &.active {
+            background-color: var(--accent-color-dark);
+        }
+    }
+
+    &__card-picturebox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    &__card-person {
+        width: 50px;
+        height: 50px;
+
+        path {
+            fill: #ffffff;
+        }
+    }
+
+    &__card-company {
+        width: 50px;
+        height: 50px;
+
+        path {
+            fill: #ffffff;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 24px;
+        color: var(--color-white);
+    }
+}
+
+//--------------------------- accordion------------------------------//
+
+.charitypage {
+
+    &__person-content {
+        
+    }
+
+    &__company-content {
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    &__person-accordion {
+    }
+
+    &__person-item {
+        list-style: none;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .active {
+        max-height: 1500px;
+    }
+
+    &__person-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--border-radius);
+        padding: 10px 15px;
+        background-color: var(--accent-color);
+        color: var(--color-white);
+        cursor: pointer;
+        transition: background-color .3s;
+        &:hover {
+            background-color: var(--accent-color-dark);
+        }
+    }
+
+    &__person-form-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    &__person-form-image {
+        display: block;
+        width: 100px;
+        height: auto;
+    }
+
+    //------------form-----------//
+		&__person-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+		}
+
+		&__person-form-span {
+
+		}
+
+		&__person-form-sum {
+            width: 150px;
+
+		}
+
+		&__person-form-submit {
+            @extend %btn-blue;
+            outline: none;
+            border: none;
+            width: 220px;
+		}
+    //------------form-----------//
+
+
+    &__person-question-text {
+        font-size: 21px;
+    }
+
+    &__person-question-arrow {
+        width: 20px;
+        transition: transform .5s;
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__person-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: all .7s ease;
+        &.active {
+            margin-top: 10px;
+        }
+    }
+
+    &__accordion-text-subtitle {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__accordion-text {
+        font-size: 21px;
+        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+
+    &__accordion-text-p0 {
+        padding-left: 0;
+    }
+
+    &__accordion-text-red {
+        color: red;
+    }
+
+    &__accordion-list {
+        margin-bottom: 20px;
+        padding-left: 40px;
+    }
+
+    &__accordion-item {
+        list-style: decimal;
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    &__accordion-item-disk {
+        list-style: disc;
+    }
+
+    &__accordion-link-phone {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__accordion-link-document {
+        @extend %btn-blue;
+        margin: 5px 0 15px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .charitypage {
+        padding-top: 70px;      
+    }
+}
