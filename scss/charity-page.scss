@@ -118,7 +118,7 @@
     }
 
     .active {
-        max-height: 1500px;
+        max-height: 7000px;
     }
 
     &__person-question {
@@ -141,6 +141,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
         gap: 15px;
     }
 
@@ -159,11 +160,17 @@
 		}
 
 		&__person-form-span {
-
+            font-size: 21px;
+            padding-top: 5px;
 		}
 
 		&__person-form-sum {
-            width: 150px;
+            padding: 10px 15px;
+            font-size: 21px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius)
+            // width: 250px;
 
 		}
 
@@ -171,6 +178,7 @@
             @extend %btn-blue;
             outline: none;
             border: none;
+            border-radius: 5px;
             width: 220px;
 		}
     //------------form-----------//

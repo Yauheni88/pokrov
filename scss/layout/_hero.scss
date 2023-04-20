@@ -6,7 +6,11 @@
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
     max-height: 768px;
-   
+
+    &__gradient {
+        display: none;
+    }
+
 	&__inner {
         position: relative;
         display: flex;
@@ -106,11 +110,22 @@
 
 @media screen and (max-width: 740px) {
     .hero {
+        position: relative;
         background: url(./assets/img/123.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 32% 40%;
         
+    }
+
+    .hero__gradient {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #0a0a0c3b;
     }
 
     .hero__inner {

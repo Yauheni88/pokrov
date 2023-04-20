@@ -700,7 +700,7 @@ main {
   margin-bottom: 0;
 }
 .charitypage .active {
-  max-height: 1500px;
+  max-height: 7000px;
 }
 .charitypage__person-question {
   display: flex;
@@ -721,6 +721,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .charitypage__person-form-image {
@@ -734,12 +735,21 @@ main {
   gap: 15px;
   margin-bottom: 25px;
 }
+.charitypage__person-form-span {
+  font-size: 21px;
+  padding-top: 5px;
+}
 .charitypage__person-form-sum {
-  width: 150px;
+  padding: 10px 15px;
+  font-size: 21px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
 }
 .charitypage__person-form-submit {
   outline: none;
   border: none;
+  border-radius: 5px;
   width: 220px;
 }
 .charitypage__person-question-text {

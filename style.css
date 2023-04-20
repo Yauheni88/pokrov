@@ -462,6 +462,9 @@ main {
   height: calc(var(--vh, 1vh) * 100);
   max-height: 768px;
 }
+.hero__gradient {
+  display: none;
+}
 .hero__inner {
   position: relative;
   display: flex;
@@ -545,10 +548,20 @@ main {
 }
 @media screen and (max-width: 740px) {
   .hero {
+    position: relative;
     background: url(./assets/img/123.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 32% 40%;
+  }
+  .hero__gradient {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 12, 0.231372549);
   }
   .hero__inner {
     justify-content: center;
@@ -930,10 +943,48 @@ main {
   font-size: 24px;
   font-weight: 400;
 }
+.news__article-iconbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.news__article-viewsbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.news__article-svg {
+  width: 26px;
+  height: 26px;
+  fill: #646363;
+}
+.news__article-number-views {
+  font-size: 18px;
+  color: #646363;
+}
+.news__article-svg-calendar {
+  width: 20px;
+  height: 20px;
+}
+.news__article-svg-calendar path {
+  fill: #646363;
+}
+.news__article-date {
+  font-size: 18px;
+  color: #646363;
+}
 .news__article-link {
   text-decoration: none;
-  font-size: 19px;
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  padding: 10px 15px;
+  text-align: center;
+  width: 150px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s;
+}
+.news__article-link:hover {
+  background-color: var(--accent-color-dark);
 }
 .news__link {
   margin: 0 auto;
@@ -1035,13 +1086,13 @@ main {
   flex-basis: 350px;
 }
 .footer__wrapper-text {
-  font-size: 20px;
+  font-size: 21px;
   margin-bottom: 15px;
 }
 .footer__wrapper-left-phone {
   display: block;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 21px;
   text-decoration: none;
   color: var(--color-white);
 }
@@ -1059,7 +1110,7 @@ main {
 .footer__wrapper-email {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 21px;
 }
 .footer__wrapper-item {
   list-style: none;
@@ -1068,7 +1119,7 @@ main {
 .footer__wrapper-link {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 20px;
+  font-size: 21px;
 }
 .footer__wrapper-center-social {
   flex: 0 0 165px;
@@ -1084,7 +1135,7 @@ main {
   align-items: flex-end;
 }
 .footer__wrapper-rigths {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 @media screen and (max-width: 1100px) {
