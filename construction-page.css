@@ -682,6 +682,10 @@ main {
 .construction__smaller-font {
   font-size: 20px;
 }
+.construction__text-color-phone {
+  text-decoration: none;
+  color: #000;
+}
 .construction__image {
   max-width: 100%;
   display: inline-block;
