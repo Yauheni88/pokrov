@@ -1,0 +1,257 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// ----------------- header -------------------------//
+
+.header {
+    background-color: #3865aa;
+}
+
+// ----------------- construction -------------------------//
+
+.construction {
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__left {
+        flex-basis: 70px;
+        min-width: 70px;
+    }
+
+    &__rigth {
+        width: auto;
+    }
+
+    &__rigth-list {
+        list-style: none;
+    }
+
+    &__rigth-item {
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    &__box {
+        margin-bottom: 20px;
+    }
+
+    &__date {
+        position: absolute;
+        top: 0;
+        left: -90px;
+        display: inline-block;
+        width: 70px;
+        font-size: 24px;
+        color: var(--color-white);
+        padding: 5px 0;
+        text-align: center;
+        background-color: var(--accent-color);
+        border-radius: var(--border-radius);
+        outline: 2px solid #fff;
+        z-index: 5;
+    }
+
+    &__line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -54px;
+        width: 1px;
+        z-index: 0;
+        border-left: 1px dashed #ccc;
+    }
+
+    &__text {
+        font-size: 21px;
+        padding-bottom: 10px;
+    }
+
+    &__word-brake {
+        word-break: break-all;
+    }
+
+    &__smaller-font {
+        font-size: 20px;
+    }
+
+    &__image {
+        max-width: 100%;
+        display: inline-block;
+        height: auto;
+        border-radius: var(--border-radius);
+    }
+
+    &__image-wrapper {
+        justify-content: center;
+        overflow: auto;
+        display: flex;
+        gap: 2%;
+        img {
+            max-width: 49%;
+        }
+    }
+
+    &__figure {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    &__figcaption {
+        font-size: 19px;
+        color: #5a5a5a;
+        margin-top: 10px;
+    }
+
+    &__box-wrapper {
+        font-size: 21px;
+    }
+
+    &__box-span {
+
+    }
+
+    &__phone-link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        font-size: 21px;
+        list-style-position: inside;
+        margin-bottom: 10px;
+    }
+
+    &__list-inner {
+        font-size: 21px;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__inner-item {
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .construction {
+        &::after {
+        }
+    
+        &__inner {
+        }
+    
+        &__title {
+        }
+    
+        &__subtitle {
+            font-size: 21px;
+        }
+    
+        &__wrapper {
+            display: flex;
+            gap: 10px;
+        }
+    
+        &__left {
+            flex-basis: 50px;
+            min-width: 50px;
+        }
+    
+        &__rigth {
+        }
+    
+        &__rigth-list {
+        }
+    
+        &__rigth-item {
+        }
+    
+        &__box {
+        }
+    
+        &__date {
+            left: -60px;
+            width: 50px;
+            font-size: 21px;
+        }
+    
+        &__line {
+            left: -34px;
+        }
+    
+        &__text {
+        }
+    
+        &__image {
+        }
+    
+        &__image-wrapper {
+            flex-wrap: wrap;
+            gap: 15px;
+            img {
+                max-width: 100%;
+            }
+        }
+    
+        &__figure {
+        }
+    
+        &__figcaption {
+        }
+    
+        &__box-wrapper {
+        }
+    
+        &__box-span {
+    
+        }
+    
+        &__phone-link {
+        }
+    
+        &__list {
+        }
+    
+        &__item {
+        }
+    
+        &__list-inner {
+        }
+    
+        &__inner-item {
+        }
+    }
+}
