@@ -1,0 +1,73 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// ----------------- header -------------------------//
+
+.header {
+    background-color: #3865aa;
+}
+
+// ----------------- church-page -------------------------//
+
+.church-page {
+
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    &__title {
+    }
+
+    &__text {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    &__figure {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: var(--border-radius);
+        margin-bottom: 10px;
+    }
+    
+    &__figcaption {
+        font-size: 19px;
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    &__church-phone {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+
+    &__link {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+}
