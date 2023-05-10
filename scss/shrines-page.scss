@@ -1,0 +1,104 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/hamburger.scss';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// ----------------- header -------------------------//
+
+.header {
+    background-color: #3865aa;
+}
+
+// ----------------- shrines-page -------------------------//
+
+.shrines-page {
+
+    padding-top: 85px;
+    &::after {
+        display: none;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+        
+    }
+
+    &__box {
+        margin-bottom: 15px;
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            margin: 15px 0 30px;
+            height: 0.5px;
+            background-color: #000E2A;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &__text {
+        font-size: 21px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 4%;
+    }
+
+    &__wrapper-left {
+        min-width: 35%;
+    }
+
+    &__figure {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: var(--border-radius);
+        margin-bottom: 10px;
+    }
+
+    &__figcaption {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shrines-page {
+
+		&__wrapper {
+            flex-wrap: wrap;
+		}
+
+		&__wrapper-left {
+            min-width: 100%;
+		}
+
+		&__subtitle {
+            font-size: 24px;
+		}
+    }
+}
