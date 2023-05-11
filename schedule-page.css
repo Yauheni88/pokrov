@@ -462,7 +462,7 @@ main {
     gap: 20px;
   }
   .header__logo-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .schedule {
@@ -618,13 +618,13 @@ main {
   flex-basis: 350px;
 }
 .footer__wrapper-text {
-  font-size: 20px;
+  font-size: 21px;
   margin-bottom: 15px;
 }
 .footer__wrapper-left-phone {
   display: block;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 21px;
   text-decoration: none;
   color: var(--color-white);
 }
@@ -642,7 +642,7 @@ main {
 .footer__wrapper-email {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 21px;
 }
 .footer__wrapper-item {
   list-style: none;
@@ -651,7 +651,7 @@ main {
 .footer__wrapper-link {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 20px;
+  font-size: 21px;
 }
 .footer__wrapper-center-social {
   flex: 0 0 165px;
@@ -667,7 +667,7 @@ main {
   align-items: flex-end;
 }
 .footer__wrapper-rigths {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 @media screen and (max-width: 1100px) {

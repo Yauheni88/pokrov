@@ -36,6 +36,7 @@
         font-weight: 400;
         font-size: 26px;
         margin-bottom: 15px;
+        text-align: justify;
     }
 
     &__wrapper {
@@ -59,6 +60,7 @@
     &__rigth-item {
         position: relative;
         padding-bottom: 10px;
+        text-align: justify;
     }
 
     &__box {
@@ -94,6 +96,7 @@
     &__text {
         font-size: 21px;
         padding-bottom: 10px;
+        text-align: justify;
     }
 
     &__word-brake {
@@ -141,16 +144,9 @@
         font-size: 21px;
     }
 
-    &__box-span {
-
-    }
-
     &__phone-link {
         text-decoration: none;
-        color: #000;
-    }
-
-    &__list {
+        color: var(--accent-color);
     }
 
     &__item {
@@ -167,20 +163,20 @@
 
     &__inner-item {
         list-style: none;
+        text-align: justify;
     }
 }
 
+@media screen and (max-width: 576px) {
+    .construction {
+        padding-top: 70px;
+    }
+}
+
+
 @media screen and (max-width: 390px) {
     .construction {
-        &::after {
-        }
-    
-        &__inner {
-        }
-    
-        &__title {
-        }
-    
+            
         &__subtitle {
             font-size: 21px;
         }
@@ -195,18 +191,6 @@
             min-width: 50px;
         }
     
-        &__rigth {
-        }
-    
-        &__rigth-list {
-        }
-    
-        &__rigth-item {
-        }
-    
-        &__box {
-        }
-    
         &__date {
             left: -60px;
             width: 50px;
@@ -217,46 +201,12 @@
             left: -34px;
         }
     
-        &__text {
-        }
-    
-        &__image {
-        }
-    
         &__image-wrapper {
             flex-wrap: wrap;
             gap: 15px;
             img {
                 max-width: 100%;
             }
-        }
-    
-        &__figure {
-        }
-    
-        &__figcaption {
-        }
-    
-        &__box-wrapper {
-        }
-    
-        &__box-span {
-    
-        }
-    
-        &__phone-link {
-        }
-    
-        &__list {
-        }
-    
-        &__item {
-        }
-    
-        &__list-inner {
-        }
-    
-        &__inner-item {
         }
     }
 }

@@ -26,10 +26,6 @@
         max-width: 900px;
     }
 
-    &__wrapper {
-        
-    }
-
     &__cards {
         display: flex;
         justify-content: space-between;
@@ -94,19 +90,8 @@
 
 .charitypage {
 
-    &__person-content {
-        
-    }
-
-    &__company-content {
-
-    }
-
     .hidden {
         display: none;
-    }
-
-    &__person-accordion {
     }
 
     &__person-item {
@@ -214,6 +199,7 @@
         font-size: 21px;
         margin-bottom: 15px;
         padding-left: 20px;
+        text-align: justify;
     }
 
     &__accordion-text-p0 {
@@ -241,7 +227,7 @@
 
     &__accordion-link-phone {
         text-decoration: none;
-        color: inherit;
+        color: var(--accent-color);
     }
 
     &__accordion-link-document {

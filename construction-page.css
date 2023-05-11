@@ -625,6 +625,7 @@ main {
   font-weight: 400;
   font-size: 26px;
   margin-bottom: 15px;
+  text-align: justify;
 }
 .construction__wrapper {
   display: flex;
@@ -643,6 +644,7 @@ main {
 .construction__rigth-item {
   position: relative;
   padding-bottom: 10px;
+  text-align: justify;
 }
 .construction__box {
   margin-bottom: 20px;
@@ -674,6 +676,7 @@ main {
 .construction__text {
   font-size: 21px;
   padding-bottom: 10px;
+  text-align: justify;
 }
 .construction__word-brake {
   word-break: break-all;
@@ -714,7 +717,7 @@ main {
 }
 .construction__phone-link {
   text-decoration: none;
-  color: #000;
+  color: var(--accent-color);
 }
 .construction__item {
   font-size: 21px;
@@ -728,8 +731,14 @@ main {
 }
 .construction__inner-item {
   list-style: none;
+  text-align: justify;
 }
 
+@media screen and (max-width: 576px) {
+  .construction {
+    padding-top: 70px;
+  }
+}
 @media screen and (max-width: 390px) {
   .construction__subtitle {
     font-size: 21px;

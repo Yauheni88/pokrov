@@ -434,7 +434,7 @@ main {
     gap: 20px;
   }
   .header__logo-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .footer {
@@ -624,6 +624,7 @@ main {
 .church-page__text {
   font-size: 21px;
   margin-bottom: 10px;
+  text-align: justify;
 }
 .church-page__figure {
   text-align: center;
@@ -643,6 +644,7 @@ main {
 .church-page__subtitle {
   font-size: 26px;
   margin-bottom: 10px;
+  text-align: justify;
 }
 .church-page__church-phone {
   color: var(--accent-color);
@@ -651,6 +653,12 @@ main {
 .church-page__link {
   color: var(--accent-color);
   text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .church-page {
+    padding-top: 70px;
+  }
 }
 
 /*# sourceMappingURL=church-page.css.map */

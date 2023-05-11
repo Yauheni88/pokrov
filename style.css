@@ -787,6 +787,7 @@ main {
 .church__right-text {
   font-size: 20px;
   margin-bottom: 10px;
+  text-align: justify;
 }
 .church__church-img {
   max-width: 100%;
@@ -825,6 +826,7 @@ main {
 }
 .church__calendar-description {
   font-size: 20px;
+  text-align: justify;
 }
 .church__calendar-description div {
   margin-bottom: 10px;
@@ -1005,6 +1007,7 @@ main {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 15px;
+  text-align: justify;
 }
 .map__iframe {
   display: block;

@@ -28,7 +28,6 @@
     &__inner {
         margin: 0 auto;
         max-width: 1000px;
-        
     }
 
     &__box {
@@ -100,5 +99,11 @@
 		&__subtitle {
             font-size: 24px;
 		}
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .shrines-page {
+        padding-top: 70px;
     }
 }
